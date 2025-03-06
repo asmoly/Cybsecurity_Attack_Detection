@@ -76,7 +76,7 @@ optimizer = AdamW(learning_rate=0.1)
 model.compile(loss='sparse_categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
 
 # Train the model
-history = model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split=0.2)
+history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_split=0.2)
 
 # Evaluate the model
 loss, accuracy = model.evaluate(X_test, y_test)
